@@ -1263,7 +1263,7 @@ background: #ecdcffa2;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--color-primary);
+  background-color: #fff;
 }
 
 .portfolio-details .swiper-button-prev,
