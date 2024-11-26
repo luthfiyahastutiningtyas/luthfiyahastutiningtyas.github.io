@@ -1340,7 +1340,7 @@ background: #ecdcffa2;
 
 .portfolio-details .portfolio-info .btn-visit {
   padding: 8px 40px;
-  background: var(--color-primary);
+  background: #fff;
   color: #fff;
   border-radius: 50px;
   transition: 0.3s;
