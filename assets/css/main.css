@@ -964,10 +964,10 @@ background: #ecdcffa2;
 # Our Services Section
 --------------------------------------------------------------*/
 .services {
-  background: #ffffffa2;
+  background: #ecdcffa2;
 }
 .services .my education{
-  background: #ffffff;
+  background: #ecdcffa2;
 }
 .services .service-item {
   padding: 40px;
@@ -1199,6 +1199,7 @@ background: #ecdcffa2;
 }
 
 .portfolio .portfolio-wrap {
+  background: #ffff;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.438);
   border-radius: 10px;
   height: 400px;
