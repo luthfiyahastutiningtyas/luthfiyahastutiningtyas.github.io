@@ -771,7 +771,7 @@ background: #000000;
 --------------------------------------------------------------*/
 .skills {
 padding: 40px 0;
-background: #ecdcffa2;
+background: #fff;
 }
 
 .skills .swiper {
@@ -964,7 +964,7 @@ background: #ecdcffa2;
 # Our Services Section
 --------------------------------------------------------------*/
 .services {
-  background: #fff;
+  background: #ecdcffa2;
 }
 .services .my education{
   background: #fff;
