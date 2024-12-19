@@ -1128,7 +1128,11 @@ background: #fff;
 # Our Services Section
 --------------------------------------------------------------*/
 .services {
-  background: #ecdcffa2;
+  background: #ecdcffa2; /* Latar belakang untuk seluruh bagian .services */
+  display: flex; /* Aktifkan flexbox untuk memusatkan elemen */
+  justify-content: center; /* Pusatkan elemen secara horizontal */
+  align-items: center; /* Pusatkan elemen secara vertikal */
+  min-height: 100vh; /* Buat kontainer memenuhi tinggi viewport */
 }
 .services .my education{
   background: #fff;
@@ -1138,7 +1142,7 @@ background: #fff;
   width: 450px;
   background: #fff;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.438);
-  position: center;
+  position: relative;
   height: 100%;
   border-radius: 30px
   ;
@@ -1147,7 +1151,7 @@ background: #fff;
 .services .service-item .icon {
   width: 48px;
   height: 48px;
-  position: center;
+  position: relative;
   background: rgba(255, 255, 255, 0.1);
   margin-bottom: 50px;
 }
