@@ -1147,7 +1147,7 @@ background: #fff;
 .services .service-item .icon {
   width: 48px;
   height: 48px;
-  position: relative;
+  position: center;
   background: rgba(255, 255, 255, 0.1);
   margin-bottom: 50px;
 }
