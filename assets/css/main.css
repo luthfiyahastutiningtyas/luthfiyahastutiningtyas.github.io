@@ -1158,11 +1158,11 @@ background: #fff;
   transition: ease-in-out 0.3s;
   background: rgba(255, 255, 255, 0.1);
   z-index: 2;
-  position: relative;
+  position: center;
 }
 
 .services .service-item .icon:before {
-  position: absolute;
+  position: center;
   content: "";
   height: 100%;
   width: 100%;
