@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   //Lazy loading untuk gambar
   document.querySelectorAll('img').forEach(img =>{
     if (!img.hasAttribute('loading')){
-      imgsetAttribute('loading','lazy');
+      img.setAttribute('loading','lazy');
     }
   });
 });
