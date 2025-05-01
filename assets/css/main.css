@@ -1378,6 +1378,7 @@ background: #fff;
   transition: 0.3s;
   position: relative;
   z-index: 1;
+  cursor:pointer;
 }
 
 .portfolio .portfolio-wrap .portfolio-info {
@@ -1610,7 +1611,15 @@ background: #fff;
 .certification .certificate img {
   border-radius: 10px;
   overflow: hidden;
+  transition: 0.3s;
+  position: relative;
+  z-index: 1;
+  cursor:pointer;
+  box-shadow 0.3s ease;
 }
+.certification .certificate:hover img {
+  transform: scale(1.1);
+  box-shadow:0 8px 16px rgba(0, 0, 0, 0.2);}
 
 .certification .certificate .certificate-content {
   padding: 0 20px 30px 20px;
