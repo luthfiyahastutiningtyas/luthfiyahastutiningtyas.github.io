@@ -1,10 +1,4 @@
-/**
-* Template Name: Impact
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/impact-bootstrap-business-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 /*--------------------------------------------------------------
 # Set main reusable colors and fonts using CSS variables
@@ -199,7 +193,9 @@ section {
   z-index: 999999;
   overflow: hidden;
   background: #fff;
-  transition: all 0.6s ease-out;
+  transition: opacity 0.6s ease-out, visibility 0.6s ease-out;
+  opacity: 1;
+  visibility: visible;
 }
 
 #preloader:before {
