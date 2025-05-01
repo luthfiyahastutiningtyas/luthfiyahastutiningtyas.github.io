@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
       img.setAttribute('loading','lazy');
     }
   });
-});
 
   /**
    * Sticky Header on Scroll
