@@ -1138,7 +1138,7 @@ background: #fff;
 # Our Services Section
 --------------------------------------------------------------*/
 .services {
-  background: #7293cc; /* Latar belakang untuk seluruh bagian .services */
+  background: #fff; /* Latar belakang untuk seluruh bagian .services */
   display: flex; /* Aktifkan flexbox untuk memusatkan elemen */
   justify-content: center; /* Pusatkan elemen secara horizontal */
   align-items: center; /* Pusatkan elemen secara vertikal */
@@ -1406,7 +1406,7 @@ background: #fff;
 # Portfolio Section
 --------------------------------------------------------------*/
 .portfolio{
-  background: #ecdcffa2;
+  background: #fff;
 }
 
 .portfolio .portfolio-flters {
@@ -2046,7 +2046,7 @@ background: #fff;
 
 .contact .info-item {
   width: 100%;
-  background-color: #654a85;
+  background-color: var(--color-secondary);
   margin-bottom: 20px;
   padding: 20px;
   border-radius: 10px;
