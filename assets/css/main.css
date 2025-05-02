@@ -234,7 +234,7 @@ section {
 # Header
 --------------------------------------------------------------*/
 .topbar {
-  background: --color-default;
+  background: var(--color-default);
   height: 40px;
   font-size: 14px;
   transition: all 0.5s;
@@ -287,7 +287,7 @@ section {
   transition: all 0.5s;
   z-index: 997;
   height: 90px;
-  background-color: --color-default;
+  background-color: var(--color-default);
 }
 
 .header.sticked {
