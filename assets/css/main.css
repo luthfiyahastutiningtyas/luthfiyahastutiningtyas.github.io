@@ -1361,7 +1361,7 @@ background: #fff;
 .testimonials .testimonial-item .quote-icon-right {
   display: inline-block;
   right: -5px;
-  position: relative;
+  position: relative;I'mj
   top: 10px;
   transform: scale(-1, -1);
 }
@@ -2233,6 +2233,41 @@ background: #fff;
   font-size: 20px;
   margin-bottom: 30px;
 }
+
+.hero .image-border {
+  position: relative; /* Untuk menempatkan border animasi di atas gambar */
+  display: inline-block;
+}
+
+.hero .image-border img {
+  display: block; /* Hilangkan margin bawaan pada gambar */
+  width: 100%; /* Pastikan sesuai dengan layout Anda */
+  border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+}
+
+.hero .image-border:before {
+  content: ""; /* Elemen pseudo untuk border animasi */
+  position: absolute;
+  top: -10px; /* Sesuaikan jarak border dari gambar */
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 4px solid white; /* Warna border putih */
+  border-radius: 50%; /* Membuat border berbentuk lingkaran */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Efek bayangan */
+  animation: spin 2s linear infinite; /* Animasi berputar */
+}
+
+/* Animasi berputar */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 .hero .btn-get-started {
   font-family: var(--font-primary);
