@@ -1179,7 +1179,7 @@ background: #fff;
   font-weight: 700;
   margin: 0 0 20px 0;
   padding-bottom: 8px;
-  font-size: 4vw; /* Ukuran font responsif berdasarkan lebar layar */
+  font-size: 22px; /* Ukuran font h3 */
   position: relative;
   display: inline-block;
   border-bottom: 4px solid #eeeeee;
@@ -1191,23 +1191,23 @@ background: #fff;
 }
 
 .services .service-item h4 {
-  font-size: 3vw; /* Ukuran font responsif berdasarkan lebar layar */
+  font-size: 20px; /* Ukuran font h4 */
 }
 
 .services .service-item p {
   line-height: 24px;
-  font-size: 2.5vw; /* Ukuran font responsif berdasarkan lebar layar */
+  font-size: 14px; /* Ukuran font p */
   margin-bottom: 0;
 }
 
 /* Media Queries untuk layar tablet */
 @media (max-width: 768px) {
   .services .service-item h3 {
-    font-size: 28px; /* Ukuran font untuk tablet */
+    font-size: 20px; /* Ukuran font untuk tablet */
   }
 
   .services .service-item h4 {
-    font-size: 24px; /* Ukuran font untuk tablet */
+    font-size: 18px; /* Ukuran font untuk tablet */
   }
 
   .services .service-item p {
@@ -1218,15 +1218,15 @@ background: #fff;
 /* Media Queries untuk layar HP */
 @media (max-width: 480px) {
   .services .service-item h3 {
-    font-size: 22px; /* Ukuran font untuk HP */
+    font-size: 17px; /* Ukuran font untuk HP */
   }
 
   .services .service-item h4 {
-    font-size: 20px; /* Ukuran font untuk HP */
+    font-size: 15px; /* Ukuran font untuk HP */
   }
 
   .services .service-item p {
-    font-size: 14px; /* Ukuran font untuk HP */
+    font-size: 13px; /* Ukuran font untuk HP */
   }
 }
 
