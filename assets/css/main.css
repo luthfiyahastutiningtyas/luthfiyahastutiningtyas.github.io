@@ -541,7 +541,7 @@ section {
   .navbar .getstarted:hover,
   .navbar .getstarted:focus:hover {
     color: #fff;
-    background: #654a85;
+    background: #4d648d;
   }
 
   .navbar .dropdown ul,
@@ -551,7 +551,7 @@ section {
     padding: 10px 0;
     margin: 10px 20px;
     transition: all 0.5s ease-in-out;
-    background-color:  #654a85;
+    background-color:  #4d648d;
     border: 1px solid #c8fa3f;
   }
 
@@ -594,7 +594,7 @@ section {
     content: "";
     position: fixed;
     inset: 0;
-    background:  #654a85;
+    background:  rgba(77,100,141,0.6);
     z-index: 9996;
   }
 }
