@@ -939,9 +939,23 @@ background: #fff;
 }
 
 .skills .swiper-slide img {
-  transition: 0.05s;
+   width: 100px;
+  height: auto;
+  transition: transform 0.05s ease-in-out;
+}
+/* Tablet: max-width 768px */
+@media (max-width: 768px) {
+  .skills .swiper-slide img {
+    width: 80px; /* sedikit lebih kecil */
+  }
 }
 
+/* HP: max-width 480px */
+@media (max-width: 480px) {
+  .skills .swiper-slide img {
+    width: 60px; /* lebih kecil lagi di HP */
+  }
+}
 .skills .swiper-slide img:hover {
   transform: scale(1.1);
 }
