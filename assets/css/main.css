@@ -705,7 +705,7 @@ section {
   animation-timing-function: steps;
   opacity: 1;
   border-radius: 50%;
-  border: 5px solid #654a85;
+  border: 5px solid #4d648d;
   top: -15%;
   left: -15%;
   background: rgba(198, 16, 0, 0);
@@ -869,7 +869,7 @@ background: #000000;
   animation-timing-function: steps;
   opacity: 1;
   border-radius: 50%;
-  border: 5px solid #654a85;
+  border: 5px solid #4d648d;
   top: -15%;
   left: -15%;
   background: rgba(198, 16, 0, 0);
@@ -1144,10 +1144,11 @@ background: #fff;
   align-items: center; /* Pusatkan elemen secara vertikal */
   min-height: 100vh; /* Buat kontainer memenuhi tinggi viewport */
 }
-.services .my education{
+.services .my-education{
   background: #fff;
 }
 .services .service-item {
+  margin: 0;
   padding: 40px;
   width: 450px;
   background: #fff;
@@ -2265,6 +2266,7 @@ background: #fff;
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
   border: 2px solid rgba(255, 255, 255, 0.1);
+  margin-right: 15px;
 }
 
 .hero .btn-cv:hover {
