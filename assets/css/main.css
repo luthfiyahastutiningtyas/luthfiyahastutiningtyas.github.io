@@ -2204,7 +2204,7 @@ background: #fff;
 .hero {
   width: 100%;
   position: relative;
-  background: var(--color-primary);
+  background: #fff;
   padding: 60px 0 0 0;
 }
 
