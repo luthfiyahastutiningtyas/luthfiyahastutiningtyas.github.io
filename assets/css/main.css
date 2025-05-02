@@ -1138,7 +1138,7 @@ background: #fff;
 # Our Services Section
 --------------------------------------------------------------*/
 .services {
-  background: #ecdcffa2; /* Latar belakang untuk seluruh bagian .services */
+  background: #7293cc; /* Latar belakang untuk seluruh bagian .services */
   display: flex; /* Aktifkan flexbox untuk memusatkan elemen */
   justify-content: center; /* Pusatkan elemen secara horizontal */
   align-items: center; /* Pusatkan elemen secara vertikal */
