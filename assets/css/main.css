@@ -1217,7 +1217,8 @@ background: #fff;
   padding-bottom: 8px;
   font-size: 22px; /* Ukuran font h3 */
   position: relative;
-  display: inline-block;
+  display: block; /* Ganti dari inline-block ke block */
+  text-align: center; /* Agar tulisan berada di tengah */
   border-bottom: 4px solid #eeeeee;
   transition: 0.3s;
 }
@@ -1240,6 +1241,8 @@ background: #fff;
 @media (max-width: 768px) {
   .services .service-item h3 {
     font-size: 20px; /* Ukuran font untuk tablet */
+    display: block; /* Ganti dari inline-block ke block */
+    text-align: center; /* Agar tulisan berada di tengah */
   }
 
   .services .service-item h4 {
@@ -1255,6 +1258,8 @@ background: #fff;
 @media (max-width: 480px) {
   .services .service-item h3 {
     font-size: 15px; /* Ukuran font untuk HP */
+    display: block; /* Ganti dari inline-block ke block */
+    text-align: center; /* Agar tulisan berada di tengah */
   }
 
   .services .service-item h4 {
