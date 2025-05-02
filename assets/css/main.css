@@ -1161,6 +1161,42 @@ background: #fff;
   position: center;
 }
 
+/* Media Queries untuk layar tablet (maks 768px) */
+@media (max-width: 768px) {
+  .services .service-item {
+    width: 100%; /* Lebar menjadi 100% agar mengisi layar tablet */
+    padding: 30px;
+  }
+
+  .services .service-item .icon {
+    width: 40px; /* Ukuran ikon lebih kecil */
+    height: 40px;
+    margin-bottom: 30px;
+  }
+
+  .services .service-item .icon i {
+    font-size: 48px; /* Ukuran ikon lebih kecil untuk tablet */
+  }
+}
+
+/* Media Queries untuk layar HP (maks 480px) */
+@media (max-width: 480px) {
+  .services .service-item {
+    width: 100%; /* Lebar menjadi 100% agar mengisi layar HP */
+    padding: 20px;
+  }
+
+  .services .service-item .icon {
+    width: 36px; /* Ukuran ikon lebih kecil lagi untuk HP */
+    height: 36px;
+    margin-bottom: 20px;
+  }
+
+  .services .service-item .icon i {
+    font-size: 40px; /* Ukuran ikon lebih kecil lagi untuk HP */
+  }
+}
+
 .services .service-item .icon:before {
   position: center;
   content: "";
@@ -1218,11 +1254,11 @@ background: #fff;
 /* Media Queries untuk layar HP */
 @media (max-width: 480px) {
   .services .service-item h3 {
-    font-size: 17px; /* Ukuran font untuk HP */
+    font-size: 15px; /* Ukuran font untuk HP */
   }
 
   .services .service-item h4 {
-    font-size: 15px; /* Ukuran font untuk HP */
+    font-size: 14px; /* Ukuran font untuk HP */
   }
 
   .services .service-item p {
