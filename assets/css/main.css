@@ -939,7 +939,7 @@ background: #fff;
 }
 
 .skills .swiper-slide img {
-  transition: 0.1s;
+  transition: 0.05s;
 }
 
 .skills .swiper-slide img:hover {
