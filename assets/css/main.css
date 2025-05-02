@@ -2218,7 +2218,7 @@ background: #fff;
   height: 100%;
   background: var(--color-primary);
   transform: translateY(-100%);
-  animation: show-bars .5s ease-in-out forwards;
+  animation: show-bars 1s ease-in-out forwards;
   animation-delay: calc(.1s * var(--i));
 }
 
