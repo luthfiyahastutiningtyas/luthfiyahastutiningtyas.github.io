@@ -1263,11 +1263,11 @@ background: #fff;
   }
 
   .services .service-item h4 {
-    font-size: 14px; /* Ukuran font untuk HP */
+    font-size: 13px; /* Ukuran font untuk HP */
   }
 
   .services .service-item p {
-    font-size: 13px; /* Ukuran font untuk HP */
+    font-size: 12px; /* Ukuran font untuk HP */
   }
 }
 
