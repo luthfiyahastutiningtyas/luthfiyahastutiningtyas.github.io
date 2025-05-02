@@ -2904,6 +2904,20 @@ background: #fff;
   font-family: var(--font-primary);
 }
 
+@media (max-width: 768px) {
+  .footer .footer-info .logo span {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer .footer-info .logo span {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
 .footer .footer-info p {
   font-size: 14px;
   font-family: var(--font-primary);
