@@ -288,4 +288,37 @@ document.addEventListener('DOMContentLoaded', () => {
     aos_init();
   });
 
+  // ... semua kode kamu ...
+  window.addEventListener('load', () => {
+    aos_init();
+  });
+
+  // ============== TAMBAHKAN DI SINI ================
+  emailjs.init("qhzATaM9MGj2tkvOl");
+
+  const contactForm = document.getElementById("contactForm");
+  if (contactForm) {
+    contactForm.addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const nama = document.getElementById("nama").value;
+      const email = document.getElementById("email").value;
+      const pesan = document.getElementById("pesan").value;
+
+      emailjs.send("service_tvay5h5", "template_y8wnmsp", {
+        nama: nama,
+        email: email,
+        pesan: pesan
+      })
+      .then(function() {
+        alert("Message sent successfully!");
+        contactForm.reset();
+      }, function(error) {
+        alert("Message failed to sent: " + JSON.stringify(error));
+      });
+    });
+  }
+});
+
+
 });
