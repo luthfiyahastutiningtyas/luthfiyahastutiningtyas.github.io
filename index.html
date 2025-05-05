@@ -565,6 +565,23 @@
 
   <div id="preloader"></div>
 
+  <form id="contactForm">
+  <label for="nama">Your Name:</label>
+  <input type="text" id="nama" name="nama" required>
+
+  <label for="email">Your Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="pesan">Your Message:</label>
+  <textarea id="pesan" name="pesan" required></textarea>
+
+  <button type="submit">Send Message</button>
+  </form>
+
+<!-- Tambahkan library EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+
+
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
