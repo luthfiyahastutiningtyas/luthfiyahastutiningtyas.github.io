@@ -527,7 +527,22 @@
 
       </div>
     </section><!-- End Contact Section -->
+  
+  
+  <form id="contactForm">
+  <label for="nama">Your Name:</label>
+  <input type="text" id="nama" name="nama" required>
 
+  <label for="email">Your Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="pesan">Your Message:</label>
+  <textarea id="pesan" name="pesan" required></textarea>
+
+  <button type="submit">Send Message</button>
+  </form>
+
+    
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -565,18 +580,6 @@
 
   <div id="preloader"></div>
 
-  <form id="contactForm">
-  <label for="nama">Your Name:</label>
-  <input type="text" id="nama" name="nama" required>
-
-  <label for="email">Your Email:</label>
-  <input type="email" id="email" name="email" required>
-
-  <label for="pesan">Your Message:</label>
-  <textarea id="pesan" name="pesan" required></textarea>
-
-  <button type="submit">Send Message</button>
-  </form>
 
 <!-- Tambahkan library EmailJS -->
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
