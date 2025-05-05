@@ -532,20 +532,38 @@
   
   
   <form id="contactForm">
+  <div class="form-group">
   <label for="nama">Name:</label>
-  <input type="text" id="nama" name="nama" placeholder="Your Name" required>
+  <div class="input-icon">
+    <i class="bi bi-person"></i>
+    <input type="text" id="nama" name="nama" placeholder="Your Name" required>
+  </div>
+  </div>
 
+  <div class="form-group">
   <label for="email">Email:</label>
-  <input type="email" id="email" name="email" placeholder="Your Email" required>
+  <div class="input-icon">
+    <i class="bi bi-envelope-at"></i>
+    <input type="email" id="email" name="email" placeholder="Your Email" required>
+  </div>
+  </div>
 
+  <div class="form-group">
   <label for="pesan">Message:</label>
-  <textarea id="pesan" name="pesan" placeholder="Your Message" required></textarea>
+  <div class="input-icon">
+    <i class="bi bi-chat-dots"></i>
+    <textarea id="pesan" name="pesan" placeholder="Your Message" required></textarea>
+  </div>
+  </div>
 
-  <button type="submit">Send Message</button>
+
+  <button type="submit">
+  <i class="bi bi-send"></i> Send Message
+  </button>
   </form>
 
   <!-- Tambahkan script JavaScript Anda setelah form -->
-<script>
+  <script>
   emailjs.init("qhzATaM9MGj2tkvOl"); // Replace with your actual Public Key
 
   const contactForm = document.getElementById("contactForm");
