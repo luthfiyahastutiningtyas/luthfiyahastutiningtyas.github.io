@@ -30,6 +30,8 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+  <!-- Tambahkan library EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
 </head>
 
 <body>
@@ -542,6 +544,33 @@
   <button type="submit">Send Message</button>
   </form>
 
+  <!-- Tambahkan script JavaScript Anda setelah form -->
+  <script>
+    emailjs.init("qhzATaM9MGj2tkvOl"); // Ganti dengan user ID Anda dari EmailJS
+
+    const contactForm = document.getElementById("contactForm");
+    if (contactForm) {
+      contactForm.addEventListener("submit", function(e) {
+        e.preventDefault(); // Mencegah form dikirim secara default
+
+        const nama = document.getElementById("nama").value;
+        const email = document.getElementById("email").value;
+        const pesan = document.getElementById("pesan").value;
+
+        emailjs.send("service_tvay5h5", "template_y8wnmsp", {
+          nama: nama,
+          email: email,
+          pesan: pesan
+        })
+        .then(function(response) {
+          alert("Pesan berhasil dikirim!");
+          contactForm.reset();
+        }, function(error) {
+          alert("Pesan gagal dikirim: " + JSON.stringify(error));
+        });
+      });
+    }
+  </script>
     
   </main><!-- End #main -->
 
@@ -580,9 +609,6 @@
 
   <div id="preloader"></div>
 
-
-<!-- Tambahkan library EmailJS -->
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
 
 
   <!-- Vendor JS Files -->
