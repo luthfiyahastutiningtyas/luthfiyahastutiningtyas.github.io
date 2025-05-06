@@ -2103,14 +2103,14 @@ background: #fff;
 .contact .input-icon {
   display: flex;
   align-items: center;
-  gap: 10px; /* jarak antara icon dan input */
+  gap: 5px; /* jarak antara icon dan input */
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 8px 12px;
   background-color: #f9f9f9;
 }
 
-.contact .input-icon.textarea {
+.contact .input-icon .textarea {
   align-items: flex-start; /* ikon tetap atas */
 }
 
