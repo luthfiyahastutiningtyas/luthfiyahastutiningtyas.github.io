@@ -2223,16 +2223,21 @@ background: #fff;
 
 .contact .php-email-form button[type=submit] {
   background: var(--color-primary);
-  font-size: 14px;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
   border: 0;
   padding: 14px 45px;
   color: #fff;
   transition: 0.4s;
   border-radius: 50px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  margin-right: 15px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: rgba(0, 131, 116, 0.8);
+  background: rgba(71, 99, 225, 0.4);
 }
 
 @keyframes animate-loading {
