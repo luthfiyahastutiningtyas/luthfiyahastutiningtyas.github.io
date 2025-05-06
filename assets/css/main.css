@@ -2113,6 +2113,7 @@ background: #fff;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
   margin-right: 15px;
+  object-fit:contain;
 }
 
 .icon-tableau:hover {
