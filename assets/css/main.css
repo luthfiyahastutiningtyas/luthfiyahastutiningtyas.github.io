@@ -2223,6 +2223,7 @@ background: #fff;
 
 .contact .php-email-form button[type=submit] {
   background: var(--color-primary);
+  font-size: 14px;
   border: 0;
   padding: 14px 45px;
   color: #fff;
