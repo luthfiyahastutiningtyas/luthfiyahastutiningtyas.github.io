@@ -2110,6 +2110,10 @@ background: #fff;
   background-color: #f9f9f9;
 }
 
+.contact .input-icon.textarea {
+  align-items: flex-start; /* ikon tetap atas */
+}
+
 .contact .input-icon i {
   font-size: 1.2rem;
   color: #666;
@@ -2198,6 +2202,11 @@ background: #fff;
 }
 
 .contact .php-email-form textarea {
+  border: none;
+  outline: none;
+  flex: 1;
+  background: transparent;
+  font-size: 14px;
   min-height: 120px;
   resize: none;
   overflow-y: auto;
