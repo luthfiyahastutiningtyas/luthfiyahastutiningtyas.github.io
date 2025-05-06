@@ -2188,9 +2188,6 @@ background: #fff;
 .contact .php-email-form input[type="email"],
 .contact .php-email-form textarea {
   padding: 12px 15px;
-  width: 100%;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
 }
 
 .contact .php-email-form input[type="text"]:focus,
