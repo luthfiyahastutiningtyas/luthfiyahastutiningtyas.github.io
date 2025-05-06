@@ -2102,7 +2102,7 @@ background: #fff;
 
 .contact .input-icon {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 5px; /* jarak antara icon dan input */
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -2114,10 +2114,18 @@ background: #fff;
   align-items: flex-start; /* ikon tetap atas */
 }
 
+/* Untuk input biasa */
 .contact .input-icon i {
-  font-size: 1.2rem;
-  color: #666;
+  align-self: center;
+  margin-top: 0; /* pastikan tidak tergeser */
 }
+
+/* Untuk textarea, ikon naik ke atas */
+.contact .input-icon.textarea i {
+  align-self: flex-start;
+  margin-top: 4px; /* opsional, tweak agar sejajar dengan tulisan */
+}
+
 
 .contact .input-icon input {
   border: none;
