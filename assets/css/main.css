@@ -2114,6 +2114,7 @@ background: #fff;
   transition: all 0.3s ease-in-out;
   margin-right: 15px;
   object-fit:contain;
+  padding: 5px;
 }
 
 .icon-tableau:hover {
