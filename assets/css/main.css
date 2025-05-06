@@ -2100,6 +2100,25 @@ background: #fff;
   color: var(--color-primary);
 }
 
+.icon-tableau {
+  font-size: 20px;
+  color: #fff;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  margin-right: 15px;
+}
+
+.icon-tableau:hover {
+  background: #fff;
+  color: var(--color-primary); /* Warna utama yang digunakan */
+}
 
 .contact .input-icon {
   display: flex;
