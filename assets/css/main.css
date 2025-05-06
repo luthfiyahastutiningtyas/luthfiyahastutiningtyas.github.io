@@ -2184,23 +2184,28 @@ background: #fff;
   font-size: 14px;
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
-.contact .php-email-form input[type=pesan],
+.contact .php-email-form input[type="text"],
+.contact .php-email-form input[type="email"],
 .contact .php-email-form textarea {
   padding: 12px 15px;
+  width: 100%;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
-.contact .php-email-form input[type=pesan]:focus,
+.contact .php-email-form input[type="text"]:focus,
+.contact .php-email-form input[type="email"]:focus,
 .contact .php-email-form textarea:focus {
   border-color: var(--color-primary);
+  outline: none;
 }
 
 .contact .php-email-form textarea {
-  padding: 10px 12px;
+  min-height: 120px;
+  resize: none;
+  overflow-y: auto;
 }
+
 
 .contact .php-email-form button[type=submit] {
   background: var(--color-primary);
