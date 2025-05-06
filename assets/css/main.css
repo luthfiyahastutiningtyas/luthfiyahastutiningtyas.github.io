@@ -2123,7 +2123,7 @@ background: #fff;
 /* Untuk textarea, ikon naik ke atas */
 .contact .input-icon.textarea i {
   align-self: flex-start;
-  margin-top: 8px; /* opsional, tweak agar sejajar dengan tulisan */
+  margin-top: 9px; /* opsional, tweak agar sejajar dengan tulisan */
 }
 
 
