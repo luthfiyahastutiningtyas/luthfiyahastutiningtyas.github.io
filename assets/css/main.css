@@ -2102,7 +2102,7 @@ background: #fff;
 
 .contact .input-icon {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 5px; /* jarak antara icon dan input */
   border: 1px solid #ccc;
   border-radius: 5px;
