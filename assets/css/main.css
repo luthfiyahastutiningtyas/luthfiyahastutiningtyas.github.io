@@ -2038,22 +2038,27 @@ background: #fff;
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+/* Adjusting .info-container padding to ensure even spacing */
 .contact .info-container {
   background-color: var(--color-primary);
   height: 100%;
-  padding: 30px;
+  padding: 30px 20px;  /* Adjusted padding: 30px for top/bottom, 20px for left/right */
   border-radius: 10px;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;  /* Ensure padding doesn't cause overflow */
 }
 
+/* Adjusting .info-item for full-width and equal padding on all sides */
 .contact .info-item {
   width: 100%;
   background-color: var(--color-secondary);
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 20px;  /* Consistent padding for all items */
   border-radius: 10px;
   color: #fff;
+  box-sizing: border-box;  /* Ensures padding is part of the width */
 }
+
 
 .contact .info-item:last-child {
   margin-bottom: 0;
