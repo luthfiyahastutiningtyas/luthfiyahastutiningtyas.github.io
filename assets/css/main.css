@@ -2100,7 +2100,7 @@ background: #fff;
   color: var(--color-primary);
 }
 
-.icon-tableau {
+.contact .icon-tableau {
   font-size: 20px;
   color: #fff;
   float: left;
@@ -2117,7 +2117,7 @@ background: #fff;
   padding: 8px;
 }
 
-.icon-tableau:hover {
+.contact .icon-tableau:hover {
   background: #fff;
   color: var(--color-primary); /* Warna utama yang digunakan */
 }
