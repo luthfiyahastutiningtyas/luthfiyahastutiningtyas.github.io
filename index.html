@@ -59,7 +59,7 @@
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
     </div>
-  </header><!-- End Header -->
+    </header>
   <!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
@@ -90,14 +90,18 @@
 </div>
 
 <script>
-  const dynamicText = ["Data Enthusiast", "Data Analyst", "Data Entry"];
+  const dynamicText = ["Data Enthusiast", "Data Scientist", "Data Analyst"];
   let i = 0;
   let j = 0;
   let currentText = "";
   let isDeleting = false;
+  const typingSpeed = 150; // Kecepatan mengetik (ms)
+  const deletingSpeed = 100; // Kecepatan menghapus (ms)
+  const pauseBeforeDelete = 2000; // Jeda sebelum mulai menghapus (ms)
 
   function typeEffect() {
     const display = document.getElementById("dynamic-text");
+
     if (i < dynamicText.length) {
       if (!isDeleting && j <= dynamicText[i].length) {
         currentText = dynamicText[i].substring(0, j++);
@@ -107,19 +111,23 @@
         display.textContent = currentText;
       }
 
-      if (j === dynamicText[i].length) {
+      if (j === dynamicText[i].length && !isDeleting) {
         isDeleting = true;
-      } else if (isDeleting && j === 0) {
+        setTimeout(typeEffect, pauseBeforeDelete); // Jeda sebelum mulai menghapus
+        return;
+      }
+
+      if (isDeleting && j === 0) {
         isDeleting = false;
         i = (i + 1) % dynamicText.length;
       }
     }
 
-    setTimeout(typeEffect, isDeleting ? 50 : 100);
+    setTimeout(typeEffect, isDeleting ? deletingSpeed : typingSpeed);
   }
 
   document.addEventListener("DOMContentLoaded", typeEffect);
-</script>
+      </script>
 
 <style>
   .blinking-cursor {
