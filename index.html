@@ -65,25 +65,76 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero">
  
-    <div class="container position-relative">
-      <div class="row gy-5" data-aos="fade-in">
-        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
-          <h2>Hi! <span>I'm Luthfiyah Astutiningtyas</span></h2>
-          <p>
-          I am a Bachelor of Mathematics graduate from Universitas Negeri Semarang with a strong foundation in data analysis, processing, and visualization. Proficient in SQL, Python, Tableau, and Excel, I have hands-on experience in managing and analyzing complex datasets, creating interactive dashboards, and delivering data-driven solutions that support informed decision-making. My passion lies in uncovering insights through data and leveraging it to solve complex problems, while continuously exploring new technologies and enhancing my skills. With a commitment to innovation and adaptability, I am eager to contribute as a Data Analyst, Data Scientist, or Data Engineer to impactful projects across various industries.
-          </p>
-          <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="https://drive.google.com/drive/folders/1ml0ECrXgkOOCPYQFhs8DNYuXJq2BQDn2?usp=drive_link" class="btn-cv"><i class="bi bi-file-earmark-text"></i> Download CV</a>
-            <a href="#Home" class="btn-get-started"><i class="bi bi-code"></i> Get Started</a>
-          </div>
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2">
-          <div class="image-border">
-          <img src="https://luthfiyahastutiningtyas-github-io.pages.dev/assets/img/Luthfiyah.webp" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
-            </div>
-        </div>
+<div class="container position-relative">
+  <div class="row gy-5" data-aos="fade-in">
+    <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
+      <h2>Hi! <span>I'm Luthfiyah Astutiningtyas</span></h2>
+      <h3>
+        <span id="dynamic-text"></span>
+        <span class="blinking-cursor">|</span>
+      </h3>
+      <p>
+        I am a Bachelor of Mathematics graduate from Universitas Negeri Semarang with a strong foundation in data analysis, processing, and visualization. Proficient in SQL, Python, Tableau, and Excel, I have hands-on experience in managing and analyzing complex datasets, creating interactive dashboards, and delivering data-driven solutions that support informed decision-making. My passion lies in uncovering insights through data and leveraging it to solve complex problems, while continuously exploring new technologies and enhancing my skills. With a commitment to innovation and adaptability, I am eager to contribute as a Data Analyst, Data Scientist, or Data Engineer to impactful projects across various industries.
+      </p>
+      <div class="d-flex justify-content-center justify-content-lg-start">
+        <a href="https://drive.google.com/drive/folders/1ml0ECrXgkOOCPYQFhs8DNYuXJq2BQDn2?usp=drive_link" class="btn-cv"><i class="bi bi-file-earmark-text"></i> Download CV</a>
+        <a href="#Home" class="btn-get-started"><i class="bi bi-code"></i> Get Started</a>
       </div>
     </div>
+    <div class="col-lg-6 order-1 order-lg-2">
+      <div class="image-border">
+        <img src="https://luthfiyahastutiningtyas-github-io.pages.dev/assets/img/Luthfiyah.webp" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const dynamicText = ["Data Enthusiast", "Data Analyst", "Data Entry"];
+  let i = 0;
+  let j = 0;
+  let currentText = "";
+  let isDeleting = false;
+
+  function typeEffect() {
+    const display = document.getElementById("dynamic-text");
+    if (i < dynamicText.length) {
+      if (!isDeleting && j <= dynamicText[i].length) {
+        currentText = dynamicText[i].substring(0, j++);
+        display.textContent = currentText;
+      } else if (isDeleting && j > 0) {
+        currentText = dynamicText[i].substring(0, j--);
+        display.textContent = currentText;
+      }
+
+      if (j === dynamicText[i].length) {
+        isDeleting = true;
+      } else if (isDeleting && j === 0) {
+        isDeleting = false;
+        i = (i + 1) % dynamicText.length;
+      }
+    }
+
+    setTimeout(typeEffect, isDeleting ? 50 : 100);
+  }
+
+  document.addEventListener("DOMContentLoaded", typeEffect);
+</script>
+
+<style>
+  .blinking-cursor {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+    animation: blink 0.7s step-end infinite;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+</style>
 
     <div class="icon-boxes position-relative">
       <div class="container position-relative">
