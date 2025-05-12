@@ -103,30 +103,31 @@
     const display = document.getElementById("dynamic-text");
 
     if (!isDeleting) {
-      // Mengetik teks
-      display.textContent = dynamicText[i].substring(0, j++);
+        // Mengetik teks
+        display.textContent = dynamicText[i].substring(0, j++);
     } else {
-      // Menghapus teks
-      display.textContent = dynamicText[i].substring(0, j--);
+        // Menghapus teks
+        display.textContent = dynamicText[i].substring(0, j--);
     }
 
     if (j === dynamicText[i].length && !isDeleting) {
-      // Jika selesai mengetik, jeda sebelum menghapus
-      setTimeout(() => (isDeleting = true), pauseAfterTyping);
-      return;
+        // Jika selesai mengetik, jeda sebelum menghapus
+        setTimeout(() => (isDeleting = true), pauseAfterTyping);
+        return;
     }
 
     if (j < 0 && isDeleting) {
-      // Jika selesai menghapus, jeda sebelum mengetik teks berikutnya
-      isDeleting = false;
-      i = (i + 1) % dynamicText.length;
-      j = 0; // Reset indeks karakter
-      setTimeout(typeEffect, pauseAfterDeleting);
-      return;
+        // Jika selesai menghapus, jeda sebelum mengetik teks berikutnya
+        isDeleting = false;
+        i = (i + 1) % dynamicText.length;
+        j = 0; // Reset indeks karakter
+        setTimeout(typeEffect, pauseAfterDeleting);
+        return;
     }
 
     setTimeout(typeEffect, isDeleting ? deletingSpeed : typingSpeed);
-  }
+}
+
 
   document.addEventListener("DOMContentLoaded", typeEffect);
 </script>
