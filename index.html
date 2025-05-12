@@ -94,10 +94,10 @@
   let i = 0; // Indeks teks
   let j = 0; // Indeks karakter
   let isDeleting = false; // Status mengetik atau menghapus
-  const typingSpeed = 100; // Kecepatan mengetik (ms)
-  const deletingSpeed = 80; // Kecepatan menghapus (ms)
-  const pauseAfterTyping = 1000; // Jeda setelah teks selesai diketik (ms)
-  const pauseAfterDeleting = 300; // Jeda sebelum mengetik teks baru (ms)
+  const typingSpeed = 50; // Kecepatan mengetik (ms)
+  const deletingSpeed = 40; // Kecepatan menghapus (ms)
+  const pauseAfterTyping = 500; // Jeda setelah teks selesai diketik (ms)
+  const pauseAfterDeleting = 200; // Jeda sebelum mengetik teks baru (ms)
 
   function typeEffect() {
     const display = document.getElementById("dynamic-text");
@@ -116,10 +116,11 @@
       return;
     }
 
-    if (j === 0 && isDeleting) {
+    if (j < 0 && isDeleting) {
       // Jika selesai menghapus, jeda sebelum mengetik teks berikutnya
       isDeleting = false;
       i = (i + 1) % dynamicText.length;
+      j = 0; // Reset indeks karakter
       setTimeout(typeEffect, pauseAfterDeleting);
       return;
     }
@@ -129,6 +130,7 @@
 
   document.addEventListener("DOMContentLoaded", typeEffect);
 </script>
+
 
 
     
