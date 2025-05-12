@@ -90,7 +90,8 @@
 </div>
 
 <script>
-  const dynamicText = ["Data Enthusiast ", "Data Scientist ", "Data Analyst "];
+<script>
+  const dynamicText = ["Data Enthusiast", "Data Scientist", "Data Analyst"];
   let i = 0;
   let j = 0;
   let currentText = "";
@@ -112,8 +113,9 @@
       }
 
       if (j === dynamicText[i].length && !isDeleting) {
+        // Tambahkan jeda sebelum menghapus
         isDeleting = true;
-        setTimeout(typeEffect, pauseBeforeDelete); // Jeda sebelum mulai menghapus
+        setTimeout(typeEffect, pauseBeforeDelete);
         return;
       }
 
@@ -127,8 +129,9 @@
   }
 
   document.addEventListener("DOMContentLoaded", typeEffect);
-      </script>
+</script>
 
+    
 <style>
   .blinking-cursor {
     font-weight: bold;
