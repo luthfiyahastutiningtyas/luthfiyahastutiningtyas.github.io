@@ -91,43 +91,41 @@
 
 <script>
   const dynamicText = ["Data Enthusiast", "Data Scientist", "Data Analyst"];
-  let i = 0; // Indeks teks
-  let j = 0; // Indeks karakter
-  let isDeleting = false; // Status mengetik atau menghapus
-  const typingSpeed = 50; // Kecepatan mengetik (ms)
-  const deletingSpeed = 40; // Kecepatan menghapus (ms)
-  const pauseAfterTyping = 500; // Jeda setelah teks selesai diketik (ms)
-  const pauseAfterDeleting = 200; // Jeda sebelum mengetik teks baru (ms)
+  let i = 0;
+  let j = 0;
+  let currentText = "";
+  let isDeleting = false;
+  const typingSpeed = 150; // Kecepatan mengetik (ms)
+  const deletingSpeed = 100; // Kecepatan menghapus (ms)
+  const pauseBeforeDelete = 2000; // Jeda sebelum mulai menghapus (ms)
 
   function typeEffect() {
     const display = document.getElementById("dynamic-text");
 
-    if (!isDeleting) {
-        // Mengetik teks
-        display.textContent = dynamicText[i].substring(0, j++);
-    } else {
-        // Menghapus teks
-        display.textContent = dynamicText[i].substring(0, j--);
-    }
+    if (i < dynamicText.length) {
+      if (!isDeleting && j <= dynamicText[i].length) {
+        currentText = dynamicText[i].substring(0, j++);
+        display.textContent = currentText;
+      } else if (isDeleting && j > 0) {
+        currentText = dynamicText[i].substring(0, j--);
+        display.textContent = currentText;
+      }
 
-    if (j === dynamicText[i].length && !isDeleting) {
-        // Jika selesai mengetik, jeda sebelum menghapus
-        setTimeout(() => (isDeleting = true), pauseAfterTyping);
+      if (j === dynamicText[i].length && !isDeleting) {
+        // Tambahkan jeda sebelum menghapus
+        isDeleting = true;
+        setTimeout(typeEffect, pauseBeforeDelete);
         return;
-    }
+      }
 
-    if (j < 0 && isDeleting) {
-        // Jika selesai menghapus, jeda sebelum mengetik teks berikutnya
+      if (isDeleting && j === 0) {
         isDeleting = false;
         i = (i + 1) % dynamicText.length;
-        j = 0; // Reset indeks karakter
-        setTimeout(typeEffect, pauseAfterDeleting);
-        return;
+      }
     }
 
     setTimeout(typeEffect, isDeleting ? deletingSpeed : typingSpeed);
-}
-
+  }
 
   document.addEventListener("DOMContentLoaded", typeEffect);
 </script>
@@ -139,7 +137,7 @@
   .blinking-cursor {
     font-weight: bold;
     font-size: 1.2em;
-    color: #333;
+    color: #fff;
     animation: blink 0.7s step-end infinite;
   }
 
