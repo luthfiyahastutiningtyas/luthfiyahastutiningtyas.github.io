@@ -2320,15 +2320,17 @@ background: #fff;
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #fff;
-  text-shadow: 0px 2px 20px rgba(14, 2, 2, 0.548);
+  color: transparent; /* isi teks transparan */
+  -webkit-text-stroke: 2.5px white; /* pinggiran putih yang lebih tebal */
+  text-shadow: none; /* opsional, hilangkan shadow */
 }
 
+
 .hero h3 {
-  font-size: 32px; 
+  font-size: 36px; 
   font-weight: 700; 
   margin-bottom: 15px; 
-  color: #cdddf7 !important;
+  color: #fff !important;
   text-shadow: 0px 1px 10px rgba(234, 246, 255, 0.2); /* Bayangan lembut */
 }
 
