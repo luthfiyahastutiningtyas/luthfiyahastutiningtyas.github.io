@@ -2340,7 +2340,6 @@ background: #fff;
 .hero .image-border {
   position: relative; /* Untuk menempatkan border animasi di atas gambar */
   display: inline-block;
-  max-width: 200px;
 }
 
 .hero .image-border img {
