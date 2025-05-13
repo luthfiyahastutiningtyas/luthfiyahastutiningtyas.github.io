@@ -2066,11 +2066,13 @@ background: #fff;
   box-sizing: border-box;  /* Ensures padding is part of the width */
 }
 
-.row {
+.flex-row-custom {
   display: flex;
-  align-items: center;       /* Menyelaraskan elemen secara vertikal */
-  justify-content: space-between; /* Memberikan ruang yang proporsional di antara elemen */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
 }
+
 
 .contact .info-item:last-child {
   margin-bottom: 0;
