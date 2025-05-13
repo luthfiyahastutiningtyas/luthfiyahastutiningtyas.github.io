@@ -1689,6 +1689,7 @@ background: #fff;
   padding: 15px;
   overflow: hidden;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.438);
+  min-height: 100%;
 }
 
 .certification .certificate img {
