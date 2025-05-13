@@ -379,7 +379,7 @@ section {
     height: 2px;
     bottom: -6px;
     left: 0;
-    background-color: var(--color-secondary);
+    background-color: #cbe0f2;
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
