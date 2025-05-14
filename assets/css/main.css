@@ -1464,12 +1464,7 @@ background: #fff;
   }
 }
 
-.portfolio .row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  gap: 20px; /* Jarak antar elemen */
-}
+
 
 .portfolio .portfolio-wrap {
   background: #ffff;
