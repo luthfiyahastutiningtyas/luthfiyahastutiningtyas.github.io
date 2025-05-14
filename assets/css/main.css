@@ -1473,11 +1473,12 @@ background: #fff;
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
+  text-align: justify;
+  margin-bottom: 0;
   padding-right: 50px;
-  
-}
+  }
 
 .portfolio .portfolio-wrap .portfolio-info h4 a {
   color: var(--color-default);
@@ -1499,6 +1500,42 @@ background: #fff;
 
 .portfolio .portfolio-wrap:hover img {
   transform: scale(1.1);
+}
+
+.btn-code {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border: 2px solid black;    /* Garis tepi hitam */
+  border-radius: 10px;        /* Tepi melengkung */
+  background-color: white;    /* Latar putih */
+  color: black;               /* Teks hitam */
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.btn-code:hover {
+  background-color: black;    /* Saat hover: latar jadi hitam */
+  color: white;               /* dan teks putih */
+}
+
+.btn-read {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.btn-read:hover {
+  background-color: white; /* saat hover: latar putih */
+  color: black;            /* teks hitam */
 }
 
 /*--------------------------------------------------------------
