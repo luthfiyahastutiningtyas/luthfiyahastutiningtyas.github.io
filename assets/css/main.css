@@ -1538,7 +1538,7 @@ background: #fff;
 /* Tombol di bagian bawah */
 .portfolio .portfolio-buttons {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: flex-end;
   margin-top: auto;
 }
