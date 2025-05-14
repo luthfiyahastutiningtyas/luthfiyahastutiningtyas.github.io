@@ -1479,7 +1479,6 @@ background: #fff;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  min-height: 410px;
   height: 100%;
 }
 
@@ -1494,7 +1493,6 @@ background: #fff;
   position: relative;
   z-index: 1;
   cursor: pointer;
-  display: block;            /* Hilangkan spasi bawah default inline img */
 }
 
 /* Info portofolio */
@@ -1508,7 +1506,6 @@ background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 100%;
 }
 
 /* Judul */
