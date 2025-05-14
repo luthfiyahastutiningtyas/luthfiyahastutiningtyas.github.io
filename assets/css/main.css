@@ -1503,16 +1503,17 @@ background: #fff;
 }
 
 
-/* Judul */
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 15px;
   font-weight: 600;
   text-align: justify;
   margin-bottom: 10px;
   padding: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  display: -webkit-box;          /* Mengaktifkan model box untuk clamp */
+  -webkit-box-orient: vertical; /* Orientasi box secara vertikal */
+  -webkit-line-clamp: 4;        /* Batas maksimal 4 baris */
+  overflow: hidden;             /* Sembunyikan teks berlebih */
+  text-overflow: ellipsis;      /* Tambahkan ellipsis (...) */
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 a {
