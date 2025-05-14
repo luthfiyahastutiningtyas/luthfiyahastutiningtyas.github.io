@@ -1464,10 +1464,15 @@ background: #fff;
 
 /* Gambar dalam kartu */
 .portfolio .portfolio-wrap img {
+  width: 100%;               /* Gunakan seluruh lebar kontainer */
+  aspect-ratio: 3 / 2;       /* Jaga rasio 1200:800 (3:2) */
+  height: auto;              /* Tinggi menyesuaikan lebar */
+  object-fit: cover;         /* Potong sedikit jika perlu, agar proporsional */
   transition: 0.3s;
   position: relative;
   z-index: 1;
   cursor: pointer;
+  display: block;            /* Hilangkan spasi bawah default inline img */
 }
 
 /* Info portofolio */
