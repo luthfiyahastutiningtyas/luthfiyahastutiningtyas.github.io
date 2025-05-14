@@ -1438,7 +1438,7 @@ background: #fff;
 .portfolio .portfolio-flters li.filter-active::after {
   content: ""; /* Menambahkan elemen dekoratif untuk garis bawah */
   position: absolute;
-  bottom: -5px; /* Jarak garis dari teks */
+  bottom: -3px; /* Jarak garis dari teks */
   left: 0;
   right: 0;
   height: 3px; /* Tinggi garis */
@@ -1479,7 +1479,8 @@ portfolio .row {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  min-height: 410px;
+  height: 100%;
 }
 
 
