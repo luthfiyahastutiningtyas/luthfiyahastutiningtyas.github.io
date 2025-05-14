@@ -1421,17 +1421,33 @@ background: #fff;
 .portfolio .portfolio-flters li {
   cursor: pointer;
   display: inline-block;
-  padding: 0;
+  padding: 0 10px;
   font-size: 18px;
   font-weight: 500;
   margin: 0 10px;
   line-height: 1;
   transition: all 0.3s ease-in-out;
+  color: gray; /* Warna abu untuk filter tidak aktif */
+  position: relative; /* Untuk garis bawah */
 }
 
-.portfolio .portfolio-flters li:hover,
 .portfolio .portfolio-flters li.filter-active {
-  color: var(--color-primary);
+  color: black; /* Warna primer untuk filter aktif */
+}
+
+.portfolio .portfolio-flters li.filter-active::after {
+  content: ""; /* Menambahkan elemen dekoratif untuk garis bawah */
+  position: absolute;
+  bottom: -5px; /* Jarak garis dari teks */
+  left: 0;
+  right: 0;
+  height: 3px; /* Tinggi garis */
+  background-color: var(--color-primary); /* Warna garis */
+  border-radius: 5px; /* Opsional: membuat garis melengkung */
+}
+
+.portfolio .portfolio-flters li:hover {
+  color: var(--color-primary); /* Warna saat hover */
 }
 
 .portfolio .portfolio-flters li:first-child {
@@ -1449,11 +1465,10 @@ background: #fff;
   }
 }
 
-.portfolio-container {
+portfolio .row {
   display: flex;
   flex-wrap: wrap;
-  align-items: stretch; /* Memastikan elemen anak memiliki tinggi sama */
-  gap: 20px; /* Jarak antar elemen, opsional */
+  gap: 20px; /* Jarak antar elemen */
 }
 
 .portfolio-item {
