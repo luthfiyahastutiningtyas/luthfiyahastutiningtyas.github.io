@@ -1508,7 +1508,6 @@ background: #fff;
   -webkit-line-clamp: 4;        /* Batas maksimal 4 baris */
   overflow: hidden;             /* Sembunyikan teks berlebih */
   text-overflow: ellipsis;      /* Tambahkan ellipsis (...) */
-  min-height: calc(1.5em * 4);  /* Tinggi minimal 4 baris (1.5em per baris) */
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 a {
@@ -1528,7 +1527,7 @@ background: #fff;
   font-weight: 600;
   text-align: justify;
   display: inline-block;
-  margin-bottom: 5px;
+  margin-bottom: 1px;
 }
 
 /* Efek hover gambar */
@@ -1541,7 +1540,7 @@ background: #fff;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-top: 5px;
+  margin-top: auto;
 }
 
 /* Tombol CODE */
