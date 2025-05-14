@@ -1453,7 +1453,7 @@ background: #fff;
   background: #ffff;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.438);
   border-radius: 10px;
-  height: 420px;
+  height: 440px;
   overflow: hidden;
 }
 
@@ -1476,7 +1476,6 @@ background: #fff;
   font-size: 16px;
   font-weight: 600;
   text-align: justify;
-  margin-bottom: 0;
   padding-right: 50px;
   }
 
@@ -1503,8 +1502,8 @@ background: #fff;
 }
 
 .btn-code {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
   padding: 6px 12px;
   border: 2px solid black;    /* Garis tepi hitam */
   border-radius: 10px;        /* Tepi melengkung */
@@ -1521,8 +1520,8 @@ background: #fff;
 }
 
 .btn-read {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
   padding: 6px 12px;
   border: 2px solid black;
   border-radius: 10px;
