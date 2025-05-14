@@ -1473,7 +1473,7 @@ background: #fff;
   background: #ffff;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.438);
   border-radius: 10px;
-  height: 420px;
+  height: 400px;
   overflow: hidden;
 }
 
@@ -1502,9 +1502,9 @@ background: #fff;
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   text-align: justify;
-  margin-bottom: 5px;
+  margin-bottom: 1px;
   padding: 0;
   display: -webkit-box;          /* Mengaktifkan model box untuk clamp */
   -webkit-box-orient: vertical; /* Orientasi box secara vertikal */
@@ -1526,7 +1526,7 @@ background: #fff;
 /* Tools */
 .portfolio .portfolio-wrap .portfolio-info p a {
   color: #6c757d;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   text-align: justify;
   display: inline-block;
