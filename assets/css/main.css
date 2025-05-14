@@ -1,4 +1,4 @@
-
+hu
 
 /*--------------------------------------------------------------
 # Set main reusable colors and fonts using CSS variables
@@ -1425,7 +1425,7 @@ background: #fff;
   font-size: 18px;
   font-weight: 500;
   margin: 0 10px;
-  line-height: 1;
+  line-height: 2;
   transition: all 0.3s ease-in-out;
   color: gray; /* Warna abu untuk filter tidak aktif */
   position: relative; /* Untuk garis bawah */
@@ -1469,12 +1469,6 @@ portfolio .row {
   display: flex;
   flex-wrap: wrap;
   gap: 20px; /* Jarak antar elemen */
-}
-
-.portfolio-item {
-  flex: 1 1 calc(33.333% - 20px); /* Membuat kolom 3 grid */
-  max-width: calc(33.333% - 20px); /* Menjaga proporsi elemen */
-  display: flex;
 }
 
 /* Container utama kartu portfolio */
