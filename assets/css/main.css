@@ -1468,6 +1468,7 @@ background: #fff;
 .portfolio .row {
   display: flex;
   flex-wrap: wrap;
+  align-items: stretch;
   gap: 20px; /* Jarak antar elemen */
 }
 
@@ -1506,6 +1507,9 @@ background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden; /* Potong konten berlebih */
+  text-overflow: ellipsis; /* Tambahkan tiga titik jika konten terlalu panjang */
+  white-space: nowrap; /* Jangan pecah teks menjadi baris baru */
 }
 
 /* Judul */
