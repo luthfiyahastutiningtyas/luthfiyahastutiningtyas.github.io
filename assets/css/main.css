@@ -2110,8 +2110,9 @@ background: #fff;
 .contact .info-container {
   background-color: var(--color-primary);
   height: 100%;
-  padding: 20px; /* Konsisten padding untuk semua sisi */
+  padding: 10px; /* Konsisten padding untuk semua sisi */
   border-radius: 10px;
+  margin: 10px;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
   box-sizing: border-box; /* Pastikan padding tidak menyebabkan overflow */
   display: flex;
@@ -2124,8 +2125,8 @@ background: #fff;
 .contact .info-item {
   width: 100%;
   background-color: var(--color-secondary);
-  margin: 20px;
-  padding: 20px;  /* Consistent padding for all items */
+  margin: 10px;
+  padding: 10px;  /* Consistent padding for all items */
   border-radius: 10px;
   color: #fff;
   box-sizing: border-box;  /* Ensures padding is part of the width */
