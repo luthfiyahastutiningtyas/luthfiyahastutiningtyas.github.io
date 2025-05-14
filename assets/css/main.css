@@ -1457,8 +1457,7 @@ background: #fff;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  min-height: 400px; /* Jadi batas minimal tinggi */
-  height: 100%;       /* Agar fleksibel dan mengikuti konten */
+  min-height: 100%;
 }
 
 
