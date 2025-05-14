@@ -1489,7 +1489,7 @@ background: #fff;
   z-index: 2;
   flex-direction: column; /* Atur elemen dalam kolom */
   justify-content: space-between; /* Beri jarak antara elemen */
-  height: 100%; /* Isi penuh tinggi container
+  height: 100%; /* Isi penuh tinggi container*/
 }
 
 
