@@ -1449,77 +1449,103 @@ background: #fff;
   }
 }
 
+/* Container utama kartu portfolio */
 .portfolio .portfolio-wrap {
-  background: #ffff;
+  background: #fff;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.438);
   border-radius: 10px;
-  height: 440px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 450px; /* Jadi batas minimal tinggi */
+  height: 100%;       /* Agar fleksibel dan mengikuti konten */
 }
 
+
+/* Gambar dalam kartu */
 .portfolio .portfolio-wrap img {
   transition: 0.3s;
   position: relative;
   z-index: 1;
-  cursor:pointer;
+  cursor: pointer;
 }
 
+/* Info portofolio */
 .portfolio .portfolio-wrap .portfolio-info {
-  padding: 25px 20px;
+  padding: 20px;
   background-color: #fff;
   position: relative;
   border-top: 1px solid #f3f3f3;
   z-index: 2;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+/* Judul */
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 16px;
   font-weight: 600;
   text-align: justify;
-  padding-right: 50px;
-  }
+  margin-bottom: 10px;
+  padding: 0;
+}
 
 .portfolio .portfolio-wrap .portfolio-info h4 a {
   color: var(--color-default);
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 a:hover {
   color: var(--color-primary);
 }
 
-.portfolio .portfolio-wrap .portfolio-info p a{
+/* Tools */
+.portfolio .portfolio-wrap .portfolio-info p a {
   color: #6c757d;
   font-size: 14px;
   font-weight: 600;
   text-align: justify;
-  margin-bottom: 0;
-  padding-right: 50px;
+  display: inline-block;
+  margin-bottom: 10px;
 }
 
+/* Efek hover gambar */
 .portfolio .portfolio-wrap:hover img {
   transform: scale(1.1);
 }
 
+/* Tombol di bagian bawah */
+.portfolio .portfolio-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: auto;
+}
+
+/* Tombol CODE */
 .btn-code {
   font-size: 14px;
   font-weight: 500;
   padding: 6px 12px;
-  border: 2px solid black;    /* Garis tepi hitam */
-  border-radius: 10px;        /* Tepi melengkung */
-  background-color: white;    /* Latar putih */
-  color: black;               /* Teks hitam */
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
   text-decoration: none;
-  display: inline-block;
   transition: all 0.3s ease;
 }
 
 .btn-code:hover {
-  background-color: black;    /* Saat hover: latar jadi hitam */
-  color: white;               /* dan teks putih */
+  background-color: black;
+  color: white;
 }
 
-.btn-read {
+/* Tombol READ MORE */
+.btn-read,
+.portfolio-buttons a:not(.btn-code) {
   font-size: 14px;
   font-weight: 500;
   padding: 6px 12px;
@@ -1528,13 +1554,13 @@ background: #fff;
   background-color: black;
   color: white;
   text-decoration: none;
-  display: inline-block;
   transition: all 0.3s ease;
 }
 
-.btn-read:hover {
-  background-color: white; /* saat hover: latar putih */
-  color: black;            /* teks hitam */
+.btn-read:hover,
+.portfolio-buttons a:not(.btn-code):hover {
+  background-color: white;
+  color: black;
 }
 
 /*--------------------------------------------------------------
