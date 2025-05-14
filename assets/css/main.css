@@ -1438,7 +1438,7 @@ background: #fff;
 .portfolio .portfolio-flters li.filter-active::after {
   content: ""; /* Menambahkan elemen dekoratif untuk garis bawah */
   position: absolute;
-  bottom: -2px; /* Jarak garis dari teks */
+  bottom: -1px; /* Jarak garis dari teks */
   left: 0;
   right: 0;
   height: 3px; /* Tinggi garis */
@@ -1480,7 +1480,7 @@ background: #fff;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 420px;
 }
 
 
@@ -1507,9 +1507,7 @@ background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: hidden; /* Potong konten berlebih */
-  text-overflow: ellipsis; /* Tambahkan tiga titik jika konten terlalu panjang */
-  white-space: nowrap; /* Jangan pecah teks menjadi baris baru */
+ 
 }
 
 /* Judul */
