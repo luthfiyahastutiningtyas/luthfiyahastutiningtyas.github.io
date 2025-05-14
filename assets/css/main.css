@@ -1449,6 +1449,19 @@ background: #fff;
   }
 }
 
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch; /* Memastikan elemen anak memiliki tinggi sama */
+  gap: 20px; /* Jarak antar elemen, opsional */
+}
+
+.portfolio-item {
+  flex: 1 1 calc(33.333% - 20px); /* Membuat kolom 3 grid */
+  max-width: calc(33.333% - 20px); /* Menjaga proporsi elemen */
+  display: flex;
+}
+
 /* Container utama kartu portfolio */
 .portfolio .portfolio-wrap {
   background: #fff;
