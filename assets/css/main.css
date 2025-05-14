@@ -1476,7 +1476,7 @@ background: #fff;
   background: #ffff;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.438);
   border-radius: 10px;
-  height: 420px;
+  height: 100%;
   overflow: hidden;
 }
 
