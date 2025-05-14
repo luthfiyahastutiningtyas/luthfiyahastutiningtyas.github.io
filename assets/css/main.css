@@ -1485,7 +1485,7 @@ background: #fff;
 
 /* Judul */
 .portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   text-align: justify;
   margin-bottom: 10px;
@@ -1527,7 +1527,7 @@ background: #fff;
 
 /* Tombol CODE */
 .btn-code {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   padding: 6px 12px;
   border: 2px solid black;
@@ -1546,7 +1546,7 @@ background: #fff;
 /* Tombol READ MORE */
 .btn-read,
 .portfolio-buttons a:not(.btn-code) {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   padding: 6px 12px;
   border: 2px solid black;
