@@ -1480,7 +1480,7 @@ background: #fff;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  height: 430px;
+  min-height: 430px;
 }
 
 
@@ -1507,6 +1507,7 @@ background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-between; 
+  min-height: 100px;
 }
 
 /* Judul */
@@ -1516,6 +1517,9 @@ background: #fff;
   text-align: justify;
   margin-bottom: 10px;
   padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 a {
