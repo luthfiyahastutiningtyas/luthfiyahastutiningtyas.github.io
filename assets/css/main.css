@@ -2320,7 +2320,7 @@ background: #fff;
   outline: none;
 }
 
-.contact .php-email-form .textarea {
+.contact .php-email-form textarea {
   border: none;
   outline: none;
   flex: 1;
