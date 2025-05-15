@@ -2147,6 +2147,7 @@ background: #fff;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
+  padding: 10px;
 }
 
 
