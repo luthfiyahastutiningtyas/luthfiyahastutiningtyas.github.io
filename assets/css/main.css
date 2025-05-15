@@ -1475,16 +1475,9 @@ background: #fff;
   border-radius: 10px;
   min-height: 400px;
   overflow: hidden;
+  padding: 15px;
 }
 
-
-.portfolio .portfolio-wrap .portfolio-info {
-  padding: 25px 20px;
-  background-color: #fff;
-  position: relative;
-  border-top: 1px solid #f3f3f3;
-  z-index: 2;
-}
 
 
 /* Gambar dalam kartu */
