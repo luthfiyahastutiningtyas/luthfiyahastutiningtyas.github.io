@@ -2266,13 +2266,13 @@ background: #fff;
 }
 
 .contact .php-email-form .form-group {
-  padding-bottom: 8px;
+  padding: 8px;
 }
 
 .contact .php-email-form .form-group .label{
   font-family: var(--font-primary);
   font-weight: 500;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .contact .php-email-form .error-message {
@@ -2293,7 +2293,7 @@ background: #fff;
   color: #fff;
   background: #059652;
   text-align: center;
-  padding: 15px;
+  padding: 10px;
   font-weight: 600;
 }
 
