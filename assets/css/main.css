@@ -2230,6 +2230,7 @@ background: #fff;
   border-radius: 5px;
   padding: 10px;
   background-color: #f9f9f9;
+  margin-top: 6px;
 }
 
 .contact .input-icon.textarea {
@@ -2278,10 +2279,10 @@ background: #fff;
 }
 
 
-.contact .php-email-form .form-group .label{
+.contact .php-email-form .form-group label{
   font-family: var(--font-primary);
   font-weight: 500;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .contact .php-email-form .error-message {
@@ -2353,7 +2354,7 @@ background: #fff;
   border-radius: 50px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
   margin-right: 15px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
