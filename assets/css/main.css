@@ -2261,13 +2261,10 @@ background: #fff;
   height: 100%;
   background: #fff;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
-  padding: 30px;
+  padding: 10px;
   border-radius: 0 10px 10px 0;
 }
 
-.contact .php-email-form .form-group {
-  padding: 8px;
-}
 
 .contact .php-email-form .form-group .label{
   font-family: var(--font-primary);
