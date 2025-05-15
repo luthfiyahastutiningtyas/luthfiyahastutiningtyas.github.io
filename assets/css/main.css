@@ -2230,8 +2230,7 @@ background: #fff;
   border-radius: 5px;
   padding: 10px;
   background-color: #f9f9f9;
-  margin-top: 15px;
-}
+  }
 
 .contact .input-icon.textarea {
   align-items: flex-start; /* ikon tetap atas */
@@ -2283,6 +2282,7 @@ background: #fff;
   font-family: var(--font-primary);
   font-weight: 500;
   font-size: 14px;
+  margin-top: 15px;
 }
 
 .contact .php-email-form .error-message {
