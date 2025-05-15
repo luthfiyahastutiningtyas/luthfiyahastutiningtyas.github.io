@@ -1490,7 +1490,6 @@ background: #fff;
   overflow: hidden;
   border-radius: 10px;
   padding: 5px;
-  margin-bottom: 5px;
 }
 
 .portfolio .portfolio-wrap .portfolio-info {
@@ -2125,7 +2124,6 @@ background: #fff;
   height: 100%;
   padding: 10px; /* Konsisten padding untuk semua sisi */
   border-radius: 10px;
-  margin: 10px;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
   box-sizing: border-box; /* Pastikan padding tidak menyebabkan overflow */
   display: flex;
@@ -2134,11 +2132,9 @@ background: #fff;
   justify-content: center; /* Pusatkan elemen secara vertikal */
 }
 
-/* Adjusting .info-item for full-width and equal padding on all sides */
 .contact .info-item {
   width: 100%;
   background-color: var(--color-secondary);
-  margin: 10px;
   padding: 20px;  /* Consistent padding for all items */
   border-radius: 10px;
   color: #fff;
@@ -2218,6 +2214,11 @@ background: #fff;
 .contact .icon-tableau:hover {
   background: #fff;
   color: var(--color-primary); /* Warna utama yang digunakan */
+}
+
+.contact .info-item:hover .icon-tableau {
+  background: #fff;
+  color: var(--color-primary);
 }
 
 .contact .input-icon {
