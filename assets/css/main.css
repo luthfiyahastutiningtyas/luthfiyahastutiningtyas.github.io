@@ -2238,8 +2238,8 @@ background: #fff;
 
 /* Untuk textarea, ikon naik ke atas */
 .contact .input-icon .textarea i {
-  align-items: flex-start;
-  margin-top: 10px; /* opsional, tweak agar sejajar dengan tulisan */
+  align-items: center;
+  margin-top: 12px; /* opsional, tweak agar sejajar dengan tulisan */
 }
 
 
