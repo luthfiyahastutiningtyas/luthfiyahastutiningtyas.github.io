@@ -2225,7 +2225,7 @@ background: #fff;
 .contact .input-icon {
   display: flex;
   align-items: center;
-  gap: 4px; /* jarak antara icon dan input */
+   /* jarak antara icon dan input */
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
@@ -2273,7 +2273,7 @@ background: #fff;
   height: 100%;
   background: #fff;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
-  padding: 30px;
+  padding: 27px;
   border-radius: 0 10px 10px 0;
 }
 
