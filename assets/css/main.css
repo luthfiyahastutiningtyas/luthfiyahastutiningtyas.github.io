@@ -2122,7 +2122,7 @@ background: #fff;
 .contact .info-container {
   background-color: var(--color-primary);
   height: 100%;
-  padding: 10px; /* Konsisten padding untuk semua sisi */
+  padding: 15px 10px; /* Konsisten padding untuk semua sisi */
   border-radius: 10px;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
   box-sizing: border-box; /* Pastikan padding tidak menyebabkan overflow */
@@ -2223,11 +2223,11 @@ background: #fff;
 
 .contact .input-icon {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 5px; /* jarak antara icon dan input */
   border: 1px solid #ccc;
   border-radius: 5px;
-  padding: 12px;
+  padding: 10px;
   background-color: #f9f9f9;
 }
 
