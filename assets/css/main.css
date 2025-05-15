@@ -2225,7 +2225,7 @@ background: #fff;
 .contact .input-icon {
   display: flex;
   align-items: center;
-  gap: 5px; /* jarak antara icon dan input */
+  gap: 4px; /* jarak antara icon dan input */
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
@@ -2243,7 +2243,7 @@ background: #fff;
 /* Untuk textarea, ikon naik ke atas */
 .contact .input-icon.textarea i {
   align-items: flex-start;
-  margin-top: 13px; /* opsional, tweak agar sejajar dengan tulisan */
+  margin-top: 11px; /* opsional, tweak agar sejajar dengan tulisan */
 }
 
 
