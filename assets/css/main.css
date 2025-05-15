@@ -2224,7 +2224,7 @@ background: #fff;
 
 .contact .input-icon {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 5px; /* jarak antara icon dan input */
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -2232,7 +2232,7 @@ background: #fff;
   background-color: #f9f9f9;
 }
 
-.contact .input-icon textarea {
+.contact .input-icon.textarea {
   align-items: flex-start; /* ikon tetap atas */
 }
 
@@ -2241,7 +2241,7 @@ background: #fff;
 }
 
 /* Untuk textarea, ikon naik ke atas */
-.contact .input-icon textarea i {
+.contact .input-icon.textarea i {
   align-items: flex-start;
   margin-top: 13px; /* opsional, tweak agar sejajar dengan tulisan */
 }
