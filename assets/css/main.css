@@ -2230,7 +2230,7 @@ background: #fff;
   border-radius: 5px;
   padding: 10px;
   background-color: #f9f9f9;
-  margin-top: 6px;
+  margin-top: 10px;
 }
 
 .contact .input-icon.textarea {
@@ -2354,7 +2354,7 @@ background: #fff;
   border-radius: 50px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
   margin-right: 15px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
