@@ -2227,7 +2227,7 @@ background: #fff;
   gap: 5px; /* jarak antara icon dan input */
   border: 1px solid #ccc;
   border-radius: 5px;
-  padding: 8px 12px;
+  padding: 12px;
   background-color: #f9f9f9;
 }
 
@@ -2242,7 +2242,7 @@ background: #fff;
 }
 
 /* Untuk textarea, ikon naik ke atas */
-.contact .input-icon.textarea i {
+.contact .input-icon .textarea i {
   align-self: flex-start;
   margin-top: 10px; /* opsional, tweak agar sejajar dengan tulisan */
 }
