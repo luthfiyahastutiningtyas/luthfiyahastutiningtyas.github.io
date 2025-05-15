@@ -2122,7 +2122,7 @@ background: #fff;
 .contact .info-container {
   background-color: var(--color-primary);
   height: 100%;
-  padding: 15px 10px; /* Konsisten padding untuk semua sisi */
+  padding: 5px; /* Konsisten padding untuk semua sisi */
   border-radius: 10px;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
   box-sizing: border-box; /* Pastikan padding tidak menyebabkan overflow */
