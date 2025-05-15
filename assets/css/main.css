@@ -2124,7 +2124,6 @@ background: #fff;
   height: 100%;
   padding: 10px; /* Konsisten padding untuk semua sisi */
   border-radius: 10px;
-  margin: 10px;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
   box-sizing: border-box; /* Pastikan padding tidak menyebabkan overflow */
   display: flex;
@@ -2137,18 +2136,16 @@ background: #fff;
   width: 100%;
   background-color: var(--color-secondary);
   padding: 20px;  /* Consistent padding for all items */
-  margin: 10px;
   border-radius: 10px;
   color: #fff;
   box-sizing: border-box;  /* Ensures padding is part of the width */
 }
 
-.flex-row-custom {
+.contact .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
-  padding: 10px;
 }
 
 
