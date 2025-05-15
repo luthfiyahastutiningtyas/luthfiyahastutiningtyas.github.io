@@ -2137,6 +2137,7 @@ background: #fff;
   width: 100%;
   background-color: var(--color-secondary);
   padding: 20px;  /* Consistent padding for all items */
+  margin: 10px;
   border-radius: 10px;
   color: #fff;
   box-sizing: border-box;  /* Ensures padding is part of the width */
