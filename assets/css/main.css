@@ -2232,14 +2232,18 @@ background: #fff;
   background-color: #f9f9f9;
 }
 
-.contact .input-icon .textarea {
+.contact .input-icon textarea {
   align-items: flex-start; /* ikon tetap atas */
 }
 
-/* Untuk textarea, ikon naik ke atas */
-.contact .input-icon .textarea i {
+.contact .input-icon i {
   align-items: center;
-  margin-top: 12px; /* opsional, tweak agar sejajar dengan tulisan */
+}
+
+/* Untuk textarea, ikon naik ke atas */
+.contact .input-icon textarea i {
+  align-items: flex-start;
+  margin-top: 13px; /* opsional, tweak agar sejajar dengan tulisan */
 }
 
 
@@ -2249,6 +2253,17 @@ background: #fff;
   flex: 1;
   background: transparent;
   font-size: 14px;
+}
+
+.contact .php-email-form textarea {
+  border: none;
+  outline: none;
+  flex: 1;
+  background: transparent;
+  font-size: 14px;
+  min-height: 120px;
+  resize: none;
+  overflow-y: auto;
 }
 
 .contact .php-email-form {
@@ -2320,16 +2335,7 @@ background: #fff;
   outline: none;
 }
 
-.contact .php-email-form textarea {
-  border: none;
-  outline: none;
-  flex: 1;
-  background: transparent;
-  font-size: 14px;
-  min-height: 120px;
-  resize: none;
-  overflow-y: auto;
-}
+
 
 
 .contact .php-email-form button[type=submit] {
