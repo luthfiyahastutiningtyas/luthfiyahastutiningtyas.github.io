@@ -2394,7 +2394,7 @@ background: #fff;
   font-size: 50px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: transparent; /* isi teks transparan */
+  color: #fff; /* isi teks */
   -webkit-text-stroke: 2.5px white; /* pinggiran putih yang lebih tebal */
   text-shadow: none; /* opsional, hilangkan shadow */
 }
