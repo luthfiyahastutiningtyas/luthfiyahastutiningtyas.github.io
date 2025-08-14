@@ -57,16 +57,16 @@ section {
   overflow: hidden;
 }
 
-sections-bg {
+.sections-bg {
   background-color: #fff;
 }
 
-section-header {
+.section-header {
   text-align: center;
   padding-bottom: 60px;
 }
 
-section-header h2 {
+.section-header h2 {
   font-size: 32px;
   font-weight: 600;
   margin-bottom: 20px;
@@ -74,7 +74,7 @@ section-header h2 {
   position: relative;
 }
 
-section-header h2:after {
+.section-header h2:after {
   content: "";
   position: absolute;
   display: block;
@@ -87,7 +87,7 @@ section-header h2:after {
   margin: auto;
 }
 
-section-header p {
+.section-header p {
   margin-bottom: 0;
   color: #000000;
 }
