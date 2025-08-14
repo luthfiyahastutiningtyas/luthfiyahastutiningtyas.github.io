@@ -52,13 +52,13 @@ h6 {
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
-section {
+.section {
   padding: 60px 0;
   overflow: hidden;
 }
 
 .sections-bg {
-  background-color: #f6f6f6;
+  background-color: #fff;
 }
 
 .section-header {
@@ -320,7 +320,7 @@ section {
   margin-top: 70px;
 }
 
-section {
+.section {
   scroll-margin-top: 70px;
 }
 
