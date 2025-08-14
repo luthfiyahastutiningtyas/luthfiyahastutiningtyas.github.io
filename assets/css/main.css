@@ -1844,6 +1844,10 @@ background: #fff;
 /*--------------------------------------------------------------
 # Course  Section
 --------------------------------------------------------------*/
+.course {
+  background: #fff;
+}
+
 .course .course {
   text-align: center;
   background: #fff;
