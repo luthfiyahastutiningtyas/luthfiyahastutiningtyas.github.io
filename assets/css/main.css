@@ -1841,7 +1841,88 @@ background: #fff;
   font-size: 18px;
   margin: 0 2px;
 }
+/*--------------------------------------------------------------
+# Course  Section
+--------------------------------------------------------------*/
+.course .course {
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  overflow: hidden;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.438);
+  min-height: 100%;
+}
 
+.course .course img {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* Initial box-shadow state */
+}
+
+.course .course:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.course .course .course-content {
+  padding: 0 20px 30px 20px;
+}
+
+.course .course h4 a{
+  font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #6c757d;
+}
+
+.course .course span {
+  font-style: italic;
+  display: block;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.course .course p {
+  padding-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: #6c757d;
+}
+
+.course .course .social {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.course .course .social a {
+  color: #000000;
+  transition: 0.3s;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #bbbbbb;
+}
+
+.course .course .social a:hover {
+  color: #000000;
+  border-color: #000000;
+}
+
+.course .course .social i {
+  font-size: 18px;
+  margin: 0 2px;
 /*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
